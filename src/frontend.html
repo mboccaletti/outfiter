@@ -1,0 +1,170 @@
+<table height="243" class="outfiter_main_table">
+  <tr>
+    <td style="height: 30px;" colspan="6">
+      <div class="titulo">Outfiter<div class="bandeira" id="br"><span>Português</span></div><div class="bandeira" id="en"><span>English</span></div><div class="bandeira" id="es"><span>Español</span></div><div class="bandeira" id="pl"><span>Polski</span></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="janela" rowspan="6">
+      <div class="icone_janela_outfit"></div><div class="titulo_janela">Outfits</div>
+      <div class="janela_outfits"><form id="form_outfits"></form></div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 138px; height: 120px;" rowspan="3">
+      <div class="esquerda">
+        <table style="width: 97%; margin: 2px 2px 2px 2px">
+          <tr style="height: 127px; text-align: right; vertical-align: bottom;">
+            <td style="position: relative;">
+              <div class="carregando"></div>
+              <canvas id="tela" width="128" height="128"></canvas></td></tr>
+          <tr><td>
+            <table style="margin-top: -4px; line-height: 12px;">
+              <tr>
+                <td><div class="botao_e" id="out_e"></div></td>
+                <td style="width: 100%"><div class="outfit_nome"></div></td>
+                <td><div class="botao_d" id="out_d"></div></td></tr>
+            </table>
+          </td></tr>
+          <tr><td>
+            <table style="margin-top: -3px; line-height: 12px;"><tr>
+                <td><div class="botao_e" id="mount_e"></div></td>
+                <td style="width: 100%"><div class="montaria_nome"></div></td>
+                <td><div class="botao_d" id="mount_d"></div></td>
+              </tr></table>
+          </td></tr>
+        </table>
+      </div>
+    </td>
+    <td style="vertical-align: top; height: 127px;" colspan="3">
+      <table class="direita">
+        <tr style="height:20px;"><td>
+          <table class="tabela_seletores">
+            <tr>
+              <td class="seletores" id="head">Head</td>
+              <td class="seletores" id="primary">Primary</td>
+              <td class="seletores" id="secondary">Secondary</td>
+              <td class="seletores" id="detail">Detail</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr style="height:104px">
+        <td>
+          <table class="tabela_cores"><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+        </td>
+      </tr>
+    </table>
+      <td class="janela" rowspan="5">
+        <div class="icone_janela_mount"></div><div class="titulo_janela"><span class="lingua"><span class="br">Montarias</span><span class="en">Mounts</span><span class="es">Monturas</span><span class="pl">Wierzchowce</span></span></div>
+      <div class="janela_montarias"><form id="form_montarias"></form></div>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="3"><div class="orientacao">
+      <div class="seta_cima"></div>
+      <div class="seta_direita"></div>
+      <div class="seta_baixo"></div>
+      <div class="seta_esquerda"></div>
+          </div>
+          </td>
+        <td colspan="2" style="height: 25px;">
+          <table style="width: 100%; margin-left: -1px;">
+            <tr>
+              <td style="width: 77px;"><div class="check"><input type="checkbox" id="addon_1" name="addon_1" />  <label for="addon_1"></label><span>Addon 1</span></div></td>
+              <td style="width: 77px;"><div class="check"><input type="checkbox" value="None" id="addon_2" name="addon_2" /> <label for="addon_2"></label><span>Addon 2</span></div></td>
+              <td><div class="botao_sexo"><div id="sexo" class="sexo_f"></div></div></td>
+        </tr>
+    </table>
+        <tr style="height: 25px;">
+          <td style="width: 77px;"><div class="check"><input type="checkbox" value="None" id="animar" name="animar" />  <label for="animar"></label><span class="lingua"><span class="br">Animar</span><span class="en">Animate</span><span class="es">Animar</span><span class="pl">Animuj</span></span></div></td>
+          <td style="width: 130px;">
+            <div class="check"><input type="checkbox" value="None" id="vida" name="vida" /> <label for="vida"></label><span class="lingua"><span class="br">Barra de Vida</span><span class="en">Life Bar</span><span class="es">Barra de Vida</span><span class="pl">Pasek Życia</span></span></div></td>
+          </td>
+      </tr>
+    </td>
+  </tr>
+  <tr style="height: 25px;">
+    <td>
+      <table style="width: 100%;">
+        <tr>
+          <td><div class="check"><input type="checkbox" value="None" id="suavizar" name="suavizar" /> <label for="suavizar"></label><span class="lingua"><span class="br">Suavizar Imagem</span><span class="en">Smooth Image</span><span class="es">Suavizar Imagen</span><span class="pl">Zmiękcz Obraz</span></span></div>
+        </tr>
+      </table>
+    </td>
+    <td style="width: 77px;"><div class="check"><input type="checkbox" value="None" id="quadros" name="quadros" />  <label for="quadros"></label><span class="lingua"><span class="br">Quadros</span><span class="en">Steps</span><span class="es">Pasos</span><span class="pl">Chód</span></span></div></td>
+    <td style="padding-left: 4px;">
+      <input type="text" size="14" class="nome_char" maxlength="29" style="width: 116px;">
+    </td>
+  </tr>
+  <tr style="height: 25px; white-space: nowrap;">
+    <td colspan="4" style="padding-left: 3px;">Link: <input type="text" size="51" value="" class="link" onClick="this.select();" readonly="true"></td>
+  </tr>
+</table>
+
+  <table class="quadros" style="display: none; border-collapse: separate;">
+    <tr><td>
+      <canvas class="quadro" id="q0" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q1" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q2" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q3" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q4" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q5" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q6" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q7" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q8" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q9" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q10" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q11" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q12" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q13" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q14" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q15" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q16" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q17" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q18" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q19" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q20" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q21" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q22" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q23" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q24" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q25" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q26" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q27" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q28" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q29" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q30" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q31" width="64" height="64"></canvas>
+    </td></tr>
+    <tr><td>
+      <canvas class="quadro" id="q32" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q33" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q34" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q35" width="64" height="64"></canvas>
+    </td></tr><tr style="display: inline;"><td>
+      <canvas class="quadro" id="q36" width="64" height="64" style="margin-left: 2px;"></canvas>
+      <canvas class="quadro" id="q37" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q38" width="64" height="64"></canvas>
+      <canvas class="quadro" id="q39" width="64" height="64"></canvas>
+    </td></tr>
+  </table>
+
+<img class="invisivel" id="img_letras" src="/wiki/Especial:Filepath/Arquivo:Outfiter_Letras.png">
+<div class="invisivel" id="preload"></div>
+<canvas class="invisivel" id="tela_cor" width="64" height="64"></canvas>
+<canvas class="invisivel" id="montagem" width="2560" height="128"></canvas>

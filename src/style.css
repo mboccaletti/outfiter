@@ -1,0 +1,713 @@
+.outfiter {
+  min-width: 692px;
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 11px;
+  color: #B2A898;
+  cursor: default;
+  unselectable: on;
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select:none;
+  -user-select:none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+
+.outfiter_main_table {
+  border:#7B6E4C 1px solid;
+  background:#181E23;
+  color:#C9BDAB; margin: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+  box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+}
+
+.outfiter table {
+  border-collapse: collapse;
+}
+
+.titulo {
+  position: relative;
+  margin: 1px 2px 0 2px;
+  border: #7B6E4C 1px solid;
+  background: #11161A;
+  padding: 0 auto;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: default;
+}
+
+.janela {
+  width: 136px;
+  min-width: 136px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter Janela Fundo.png');
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: top;
+}
+
+.icone_janela_outfit {
+  position:absolute;
+  top: 2px;
+  left: 2px;
+  width: 23px;
+  height: 19px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Janela_Icone_Outfit.png');
+}
+
+.icone_janela_mount {
+  position:absolute;
+  top: 2px;
+  left: 2px;
+  width: 23px;
+  height: 19px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Janela_Icone_Montaria.png');
+}
+
+.titulo_janela {
+  position:absolute;
+  top: 0px;
+  left: 42px;
+  height: 23px;
+  line-height: 23px;
+  color: #BDB4A3;
+}
+
+.janela_outfits, .janela_montarias {
+  position: absolute;
+  top: 26px;
+  left: 4px;
+  width: 128px;
+  height: 193px;
+  color: #C8BCAB;
+  font-size: 10px;
+  overflow: auto;
+}
+
+.janela div::-webkit-scrollbar { width: 18px;}
+.janela div::-webkit-scrollbar-button:start { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Seta_Cima.png'); border: black 1px solid; border-radius: 2px; height: 18px;}
+.janela div::-webkit-scrollbar-button:start:hover { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Seta_Cima_Hover.png');}
+.janela div::-webkit-scrollbar-button:start:active { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Seta_Cima_Active.png');}
+.janela div::-webkit-scrollbar-button:end { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Seta_Baixo.png'); border: black 1px solid; border-radius: 2px; height: 18px;}
+.janela div::-webkit-scrollbar-button:end:hover { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Seta_Baixo_Hover.png');}
+.janela div::-webkit-scrollbar-button:end:active { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Seta_Baixo_Active.png');}
+.janela div::-webkit-scrollbar-track {  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Caminho.png');}
+.janela div::-webkit-scrollbar-thumb { background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Scrollbar_Barra.png'); border: black 1px solid; border-radius: 2px; -webkit-box-shadow: inset 0px 1px 0px 0px rgba(100,106,108,1), inset 0px -1px 0px 0px rgba(23,28,29,1); }
+
+.janela div { 
+  scrollbar-arrow-color: #A0A0A0;
+  scrollbar-base-color: #242C2F;
+  scrollbar-track-color: #262F32;
+  scrollbar-face-color: #242C2F;
+  scrollbar-shadow-color: #131719;
+}
+
+.janela_opcao_out,
+.janela_opcao_mount {
+  position: relative;
+  padding: 4px 0 4px 0;
+  line-height: 12px;
+}
+
+.janela_opcao_out_dif,
+.janela_opcao_mount_dif {
+  position: relative;
+  padding: 4px 0 4px 0;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPQsPVsAAACbgEva9+ddQAAAABJRU5ErkJggg==');
+  line-height: 12px;
+}
+
+.janela label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 14px;
+}
+
+.janela input[type=radio] {
+    display: none;
+}
+
+.janela label:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background: -webkit-linear-gradient(top, #BBBCBE 0%, #616364 100%);
+  background: -moz-linear-gradient(top, #BBBCBE 0%, #616364 100%);
+  background: -o-linear-gradient(top, #BBBCBE 0%, #616364 100%);
+  background: -ms-linear-gradient(top, #BBBCBE 0%, #616364 100%);
+  background: linear-gradient(top, #BBBCBE 0%, #616364 100%);
+}
+
+.janela label:before {
+    border-radius: 7px;
+}
+
+.janela input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #2B333C;
+    font-size: 11px;
+    text-align: center;
+    line-height: 12px;
+}
+
+.esquerda {
+  margin: 0 1px 2px -2px;
+  height: 179px;
+  border: #7B6E4C 1px solid;
+  background: #1D262D;
+}
+
+.carregando {
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Carregando.gif');
+  width: 70px;
+  height: 70px;
+  margin: -35px 0 0 -35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+
+/* Botões Outfit e Montaria */
+
+.botao_e {
+  width: 12px;
+  height: 21px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Esquerda.png');
+  display: inline-block;
+  cursor: pointer;
+}
+
+.botao_e:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Esquerda_Hover.png');
+}
+
+.botao_e:active {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Esquerda_Active.png');
+}
+
+.outfit_nome {
+  border: #000 1px solid;
+  background: #1F2A31;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.botao_d {
+  width: 13px;
+  height: 21px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Direita.png');
+  display: inline-block;
+  cursor: pointer;
+}
+
+.botao_d:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Direita_Hover.png');
+}
+
+.botao_d:active {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Direita_Active.png');
+}
+
+.montaria_nome {
+  border: #000 1px solid;
+  background: #1F2A31;
+  width: 100%;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.direita {
+  width: 271px;
+  margin: -1px 0 0 -2px;
+  vertical-align: top;
+}
+
+/* Seletores */
+
+.tabela_seletores {
+  width: 201px;
+  height: 21px;
+  border-top: #7B6E4C 1px solid;
+  border-left: #7B6E4C 1px solid;
+  border-right: #7B6E4C 1px solid;
+  line-height: 12px;
+}
+
+.seletores {
+  border-left: #7B6E4C 1px solid;
+  color: #F2AF4E;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  background: #1D262D;
+}
+
+.selecionado {
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  background: #11161A;
+  color: #B2A898;
+  padding-top: 3px;
+  border-top: #CBB47A 1px solid;
+  border-left: #CBB47A 1px solid;
+  border-right: #CBB47A 1px solid;
+}
+
+/* Tabela de Cores */
+
+table.tabela_cores {
+  background: #11161A;
+  width: 272px;
+  margin-top: -2px;
+  padding: 1px 1px 1px 1px;
+  border: #CBB47A 1px solid;
+  border-collapse: separate;
+}
+
+table.tabela_cores td {
+  width: 10px;
+  height: 10px;
+}
+
+.tabela_cores td:hover {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(200,188,170,1), inset 0 0 0 2px rgba(34, 34, 34, 0.65);
+  -moz-box-shadow: inset 0 0 0 1px rgba(200,188,170,1), inset 0 0 0 2px rgba(34, 34, 34, 0.65);
+  box-shadow: inset 0 0 0 1px rgba(200,188,170,1), inset 0 0 0 2px rgba(34, 34, 34, 0.65);
+}
+
+.cor_selecionada {
+  -webkit-box-shadow: inset 0 0 0 1px rgba(200,188,170,1), inset 0 0 0 2px rgba(34, 34, 34, 0.65);
+  -moz-box-shadow: inset 0 0 0 1px rgba(200,188,170,1), inset 0 0 0 2px rgba(34, 34, 34, 0.65);
+  box-shadow: inset 0 0 0 1px rgba(200,188,170,1), inset 0 0 0 2px rgba(34, 34, 34, 0.65);
+}
+
+/* Orientação */
+
+.orientacao {
+  position: relative;
+  width: 63px;
+  height: 63px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Fundo_Orientacao.png');
+}
+
+.seta_cima {
+  width: 21px;
+  height: 12px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Cima.png');
+  position:absolute;
+  top: 6px;
+  left: 21px;
+  cursor: pointer;
+}
+
+.seta_cima:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Cima_Hover.png');
+}
+
+.seta_cima:active {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Cima_Active.png');
+}
+
+.seta_direita {
+  width: 14px;
+  height: 21px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Direita.png');
+  position:absolute;
+  top: 21px;
+  left: 44px;
+  cursor: pointer;
+}
+
+.seta_direita:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Direita_Hover.png');
+}
+
+.seta_direita:active {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Direita_Active.png');
+}
+
+.seta_baixo {
+  width: 21px;
+  height: 12px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Baixo.png');
+  position:absolute;
+  top: 46px;
+  left: 21px;
+  cursor: pointer;
+}
+
+.seta_baixo:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Baixo_Hover.png');
+}
+
+.seta_baixo:active {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Baixo_Active.png');
+}
+
+.seta_esquerda {
+  width: 14px;
+  height: 21px;
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Esquerda.png');
+  position: absolute;
+  top: 21px;
+  left: 6px;
+  cursor: pointer;
+}
+
+.seta_esquerda:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Esquerda_Hover.png');
+}
+
+.seta_esquerda:active {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Seta_Esquerda_Active.png');
+}
+
+/* Nome do Char */
+
+.nome_char {
+  border: #000 1px solid;
+  background: #1D262D;
+  width: 116px;
+  height: 16px;
+  color: #B2A898;
+  padding-left: 3px;
+  width: 112px;
+}
+
+/* Botão Sexo */
+
+.botao_sexo {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Botao_Sexo.png');
+  width: 27px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.botao_sexo:hover {
+  background-image: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Botao_Sexo_Hover.png');
+}
+
+.sexo_m {
+  width: 27px;
+  height: 22px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Botao_Sexo_Masculino.png');
+}
+
+.sexo_f {
+  width: 27px;
+  height: 22px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Botao_Sexo_Feminino.png');
+}
+
+/* Checkboxes */
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.check {
+  position: relative;
+  height: 14px;
+  margin: -12px 0 0 -4px;
+}
+
+.check span {
+  margin-left: 3px;
+  display: inline-block;
+}
+
+.check label {
+  cursor: pointer;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 0;
+  margin: 5px 0 0 -16px;
+  border: 1px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, #7B6E4C 0%, #413A28 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #7B6E4C 0%, #413A28 100%);
+    -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7B6E4C), to(#413A28)) 100%;
+    -o-border-image: -o-linear-gradient(top, #7B6E4C 0%, #413A28 100%);
+    border-image: linear-gradient(to bottom, #7B6E4C 0%, #413A28 100%);
+    border-image-slice: 1;
+  background: -webkit-linear-gradient(top, #BDC0C1 0%, #64676B 100%);
+  background: -moz-linear-gradient(top, #BDC0C1 0%, #64676B 100%);
+  background: -o-linear-gradient(top, #BDC0C1 0%, #64676B 100%);
+  background: -ms-linear-gradient(top, #BDC0C1 0%, #64676B 100%);
+  background: linear-gradient(top, #BDC0C1 0%, #64676B 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BDC0C1', endColorstr='#64676B',GradientType=0 );
+}
+
+.check label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Tick.png');
+  top: 0;
+  left: 0;
+}
+
+.check label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  background: #FFF;
+  width: 14px;
+  height: 14px;
+  margin: -1px 0 0 -1px;
+  opacity: 0.5;
+}
+
+.check input[type=checkbox]:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.check input[type=checkbox]:checked + label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+
+.check input[type=checkbox]:disabled + label {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: .5;
+  cursor: default;
+}
+
+.check input[type=checkbox]:disabled + label:hover::after {
+  background: none;
+}
+
+.check input[type=checkbox]:checked:disabled + label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url('/wiki/Especial:Filepath/Arquivo:Outfiter_Tick.png');
+  top: 1px;
+  left: 1px;
+}
+
+/* Link */
+
+.outfiter input {
+  font-family: Verdana, Arial, Times New Roman, sans-serif;
+  font-size: 11px;
+}
+
+.link {
+  border: #000 1px solid;
+  background: #1D262D;
+  width: 370px;
+  height: 16px;
+  color: #B2A898;
+  margin-right: 1px;
+  padding-left: 3px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+#tela {
+  margin-top: -3px;
+}
+
+.invisivel {
+  display: none;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.quadros {
+  border:#7B6E4C 1px solid;
+  border-spacing: 0;
+  border-collapse: separate;
+  line-height: 12px;
+  background:#181E23;
+  margin-left: 5px;
+  margin-top: 7px;
+  max-width: 100%;
+  white-space: nowrap;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+  box-shadow: 0px 0px 10px 2px rgba(255,255,255,1);
+}
+
+.quadro {
+  border:#7B6E4C 1px solid;
+  background:#181E23;
+  
+}
+
+#q0, #q1, #q2, #q3 {
+  margin: 2px 2px 0 -2px;
+}
+
+#q4, #q5, #q6, #q7 {
+  margin: 0 2px 0 -2px;
+}
+
+/* Ocultar Objetos de Revisão */
+
+#mw-fr-reviewform,
+#mw-fr-revisiontag {
+  display: none;
+}
+
+/* Idiomas */
+
+.bandeira {
+  position: absolute;
+  top: 4px;
+  width: 24px;
+  height: 16px;
+  display: inline-block;
+  cursor: pointer;
+  -moz-transition: .2s linear;
+  -webkit-transition: .2s ease-out;
+  transition: .2s linear;
+}
+
+.bandeira:hover {
+  -webkit-box-shadow: inset 0px 0px 0px 24px rgba(255,255,255,0.4);
+  -moz-box-shadow: inset 0px 0px 0px 24px rgba(255,255,255,0.4);
+  box-shadow: inset 0px 0px 0px 24px rgba(255,255,255,0.4);
+}
+
+.bandeira > span {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  z-index: 10;
+  font-weight: normal;
+  font-size: 0.8em;
+  border: #7B6E4C 1px solid;
+  background: #11161A;
+  padding: 0 6px;
+}
+
+.bandeira:hover > span {
+  display:block;
+}
+
+#br {
+  right: 88px;
+  background: url('http://www.tibiawiki.com.br/wiki/Especial:Filepath/Arquivo:Outfiter_Flag_BR.png');
+}
+
+#en {
+  right: 60px;
+  background: url('http://www.tibiawiki.com.br/wiki/Especial:Filepath/Arquivo:Outfiter_Flag_EN.png');
+}
+
+#es {
+  right: 32px;
+  background: url('http://www.tibiawiki.com.br/wiki/Especial:Filepath/Arquivo:Outfiter_Flag_ES.png');
+}
+
+#pl {
+  right: 4px;
+  background: url('http://www.tibiawiki.com.br/wiki/Especial:Filepath/Arquivo:Outfiter_Flag_PL.png');
+}
+
+.lingua > span {
+  display: none;
+  margin-left: 0;
+}
+
+/* Artworks*/
+
+.artwork_td {
+  vertical-align: top;
+}
+
+#artwork_e,
+#artwork_d {
+  position: relative;
+  height: 400px;
+  -moz-transition: .8s linear;
+  -webkit-transition: .8s ease-out;
+  transition: .8s linear;
+}
+
+@media screen and (max-width: 1200px) {
+  #artwork_e,
+  #artwork_d {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1320px) {
+  #artwork_e,
+  #artwork_d {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  #artwork_e,
+  #artwork_d {
+    height: 450px;
+  }
+}
+
+.artwork {
+  position: absolute;
+}
+
+#artwork_B {
+  right: 0;
+}
+
+#artwork_C,
+#artwork_D {
+  bottom: 0;
+}
